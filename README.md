@@ -9,7 +9,7 @@ This is an Android App written in **Kotlin language**. The app uses the API of h
 4. Some Images might be a little compressed or expanded as the exact dimension of all the images vary a lot.
 5. Find the apk of the app at : [/Apk/NewsApp.apk](https://github.com/Shubh0501/News_App/blob/master/Apk/NewsApp.apk)
 
-## If you want to run the code and see the working of the app in your emulator or device, You will need an API key which can be found at : https://newsapi.org/ 
+### If you want to run the code and see the working of the app in your emulator or device, You will need an API key which can be found at : https://newsapi.org/ 
 
 ### After getting an API key from the mentioned URL,kindly follow these steps:
 1. On your platform, navigate to 'app/src/main/res/values folder
