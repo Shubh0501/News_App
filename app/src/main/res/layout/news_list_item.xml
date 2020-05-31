@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="8dp"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="15dp"
+    android:background="?attr/mainBackground">
+
+    <LinearLayout
+        android:background="@drawable/cardview_background"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewContainer"
+                android:background="@drawable/imageview_background"
+                android:layout_width="128dp"
+                android:layout_height="96dp"/>
+
+            <RelativeLayout
+                android:background="@drawable/imageview_background"
+                android:layout_width="128dp"
+                android:layout_height="96dp">
+
+                <ProgressBar
+                    android:id="@+id/progressBarSmallImage"
+                    android:elevation="-2dp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/imageNotLoadedError"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"
+                    android:text="Error!!"
+                    android:textColor="?attr/textColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_toEndOf="@id/imageViewContainer"
+                android:layout_alignTop="@id/imageViewContainer"
+                android:layout_alignBottom="@id/imageViewContainer"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/titleTextView"
+                        android:layout_centerInParent="true"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:text="Title of the news"
+                        android:textColor="?attr/textColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

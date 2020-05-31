@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/cardview_background"
+    android:elevation="8dp"
+    android:layout_margin="2dp"
+    android:layout_height="96dp">
+
+    <RelativeLayout
+        android:background="?attr/mainBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:background="?attr/mainBackground"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
